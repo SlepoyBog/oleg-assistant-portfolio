@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.tmp_test/
+tests/.tmp_runtime/
+data/
+logs/
+work_documents/
+backups/
+exports/
+*.bak

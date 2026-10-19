@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Knowledge base",
+    "path": "knowledge/CONTEXT.md",
+    "status": "approved example source"
+  },
+  {
+    "name": "Reference documents",
+    "path": "references",
+    "status": "read-only example directory"
+  },
+  {
+    "name": "Inbox",
+    "path": "inbox",
+    "status": "unverified files"
+  }
+]
