@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Oleg Assistant — демонстрационный диалог</title>
+  <style>
+    *{box-sizing:border-box} body{margin:0;background:#d9e5ed;font-family:"Segoe UI",Arial,sans-serif;color:#17212b}
+    .page{width:1000px;height:740px;margin:0 auto;display:grid;grid-template-columns:270px 1fr;background:#fff;box-shadow:0 14px 40px #6b7c8866}
+    .sidebar{border-right:1px solid #d9e0e5;background:#fff}.search{height:70px;padding:14px;background:#fff;border-bottom:1px solid #e6ebef}
+    .search div{background:#f1f3f5;color:#83919c;border-radius:20px;padding:10px 16px;font-size:14px}.chat-item{padding:15px;display:flex;gap:12px;background:#419fd9;color:#fff}
+    .avatar{width:48px;height:48px;border-radius:50%;background:#ffd600;color:#171717;display:grid;place-items:center;font-weight:800;font-size:17px;flex:0 0 auto}.chat-meta{flex:1}.chat-title{font-weight:700;margin:3px 0 5px}.chat-preview{font-size:13px;opacity:.9}.time{font-size:12px;opacity:.8;float:right}
+    .main{display:grid;grid-template-rows:70px 1fr 64px;background:#d6e5ee}.header{background:#fff;border-bottom:1px solid #d6dde2;padding:13px 20px;display:flex;align-items:center;gap:12px}.header .avatar{width:44px;height:44px}.header-title{font-weight:700}.status{color:#6f7f8a;font-size:13px;margin-top:2px}.demo{margin-left:auto;background:#fff3bf;color:#7a5b00;border:1px solid #edcf63;border-radius:8px;padding:7px 10px;font-size:12px;font-weight:600}
+    .messages{padding:22px 28px;overflow:hidden;background-color:#d7e5ed;background-image:radial-gradient(#b8ccd8 1px,transparent 1px);background-size:18px 18px}.bubble{max-width:520px;margin:0 0 12px;padding:10px 13px 7px;border-radius:10px;box-shadow:0 1px 2px #7b8d9838;font-size:15px;line-height:1.35;position:relative}.incoming{background:#fff;border-top-left-radius:3px}.outgoing{background:#e4f8cc;margin-left:auto;border-top-right-radius:3px}.clock{font-size:11px;color:#7f8d96;float:right;margin:8px 0 0 12px}.title{font-weight:700;margin-bottom:6px}.buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:9px}.buttons span{border:1px solid #63a9d3;color:#2587c4;background:#f8fcff;border-radius:6px;padding:7px;text-align:center;font-size:13px;font-weight:600}.plan{margin:4px 0 0;padding:0;list-style:none}.plan li{padding:4px 0}.ok{color:#2f9d59}.input{background:#fff;border-top:1px solid #ccd5db;display:flex;align-items:center;padding:10px 16px;gap:12px;color:#87949d}.field{flex:1;background:#f2f4f5;border-radius:20px;padding:11px 16px;color:#788690}.send{width:38px;height:38px;border-radius:50%;background:#419fd9;color:#fff;display:grid;place-items:center;font-size:18px}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <aside class="sidebar">
+      <div class="search"><div>🔍 Поиск</div></div>
+      <div class="chat-item"><div class="avatar">OA</div><div class="chat-meta"><span class="time">10:24</span><div class="chat-title">Oleg Assistant</div><div class="chat-preview">План обновлён в Excel</div></div></div>
+    </aside>
+    <section class="main">
+      <header class="header"><div class="avatar">OA</div><div><div class="header-title">Oleg Assistant</div><div class="status">локальный помощник · защищённая привязка</div></div><div class="demo">ДЕМО · ДАННЫЕ ВЫМЫШЛЕНЫ</div></header>
+      <div class="messages">
+        <div class="bubble outgoing">Нужно проверить отчёт по станкам завтра<span class="clock">10:21 ✓✓</span></div>
+        <div class="bubble incoming"><div class="title">Новая задача</div>Проверить отчёт по станкам<br>Когда: завтра<br><br>Сколько времени запланировать?<div class="buttons"><span>15 мин</span><span>30 мин</span><span>45 мин</span><span>60 мин</span><span>90 мин</span><span>120 мин</span></div><span class="clock">10:21</span></div>
+        <div class="bubble outgoing">60 мин<span class="clock">10:22 ✓✓</span></div>
+        <div class="bubble incoming"><span class="ok">✓ Задача сохранена</span><br>Ближайшее свободное окно: завтра, 09:00–10:00.<div class="buttons"><span>План на день</span><span>Перенести</span><span>Готово</span></div><span class="clock">10:22</span></div>
+        <div class="bubble outgoing">план<span class="clock">10:23 ✓✓</span></div>
+        <div class="bubble incoming"><div class="title">План на завтра</div><ul class="plan"><li>09:00–10:00 · Проверить отчёт по станкам</li><li>10:30–11:00 · Подготовить сводку</li><li>14:00–14:45 · Встреча с руководителем</li></ul><div class="buttons"><span>Обновить Excel</span><span>Добавить задачу</span><span>Меню</span></div><span class="clock">10:24</span></div>
+        <div class="bubble incoming"><span class="ok">✓ План обновлён в Excel</span><br>Предыдущая версия сохранена в архиве.<span class="clock">10:24</span></div>
+      </div>
+      <footer class="input"><span>📎</span><div class="field">Сообщение</div><div class="send">➤</div></footer>
+    </section>
+  </main>
+</body>
+</html>
